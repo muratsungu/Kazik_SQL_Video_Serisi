@@ -12,3 +12,5 @@ from [Sales].[SalesOrderHeader] s
 join [Sales].[SalesTerritory] t on s.TerritoryID = t.TerritoryID
 group by cube(t.Name),OnlineOrderFlag
 order by t.Name,OnlineOrderFlag
+
+--daha detaylı bilgi için: https://www.mssqltips.com/sqlservertip/6315/group-by-in-sql-server-with-cube-rollup-and-grouping-sets-examples/
